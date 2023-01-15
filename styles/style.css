@@ -83,6 +83,11 @@ ul{
     border: none;
     background: #FF900E;
     border-radius: 8px;
+    transform: 1s;
+}
+.button:hover{
+    transform: scale(1.05);
+    z-index: 1;
 }
 .banner-img{
     width: 1440px;
@@ -139,12 +144,22 @@ ul{
     margin: 150px auto;
     gap: 150px;
 }
+.features-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
 .features{
     background-color: rgb(255, 255, 255) ;
     filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
     padding: 25px;
     border-radius: 5px;
     margin-bottom: 20px;
+    transform: 1s;
+}
+.features:hover{
+    transform: scale(1.02);
+    z-index: 1;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.07));
 }
 h3{
     font-weight: 600;
@@ -167,7 +182,13 @@ h3{
     border-radius: 8px;
     color: #FFFFFF;
     margin: -130px;
+    transform: 1s;
 }
+.experience-button:hover{
+    transform: scale(1.05);
+    z-index: 1;
+}
+
 .experience-button h1{
     margin: 0;
     font-weight: 700;
@@ -205,7 +226,15 @@ h2{
     border: 2px solid chocolate;
     padding: 30px;
     border-radius: 5px;
+    transform: 2s;
 }
+.achieve:hover{
+    transform: scale(1.05);
+    border: 2px solid rgb(6, 83, 248);
+    z-index: 2;
+
+}
+
 /* facts style end */
 
 
@@ -270,7 +299,30 @@ h2{
 @media screen and (max-width: 576px) {
     .head{
         width: 100%;
+        overflow-x: hidden;
     }
+    .logo{
+        font-size: 20px;
+    }
+    .nav{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .button{
+        position: static;
+        margin: 0 auto;
+    }
+    .team-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    .experience-button{
+        height: 120px;
+        margin: 20px;
+    }
+    
     .sponsore, .icons, .last-project, .facts, .achievement, .features-section, .team-work{
         flex-direction: column;
         gap: 20px;
@@ -279,11 +331,37 @@ h2{
         grid-template-columns: repeat(1, 1fr);
     }
     .banner-img{
-        width: 350px;
-        height: 170px;
+        width: 500px;
+        height: 252px;
         margin-bottom: 20px;
     }
     .title{
-        
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .description{
+        margin-bottom: 20px;
+    }
+    .project-img{
+        width: 500px;
+        height: 265px;
+    }
+    .pro-title{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .pro-description{
+        text-align: left;
+    }
+    .team-title, p, .features-section, .facts{
+        text-align: center;
+        padding: 0;
+    }
+    .features-title{
+        text-align: left;
+    }
+    .foot{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
