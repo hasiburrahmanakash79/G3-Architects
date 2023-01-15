@@ -166,14 +166,7 @@ h3{
     font-size: 20px;
     margin: 0;
 }
-.architect-img{
-    width: 800px;
-    height: 1059px;
-}
-.architect-img img{
-    width: 708px;
-    height: 982px;
-}
+
 .experience-button{
     width: 342px;
     height: 170px;
@@ -288,7 +281,7 @@ h2{
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 1440px;
+    width: 77%;
     height: 100px;
     background: #FFF4E7;
     border-radius: 8px;
@@ -299,7 +292,6 @@ h2{
 @media screen and (max-width: 576px) {
     .head{
         width: 100%;
-        overflow-x: hidden;
     }
     .logo{
         font-size: 20px;
@@ -307,6 +299,10 @@ h2{
     .nav{
         flex-direction: column;
         padding: 0px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
     }
     .button{
         position: static;
@@ -323,7 +319,13 @@ h2{
         margin: 20px;
     }
     
-    .sponsore, .icons, .last-project, .facts, .achievement, .features-section, .team-work{
+    .sponsore, 
+    .icons, 
+    .last-project, 
+    .facts, 
+    .achievement, 
+    .features-section, 
+    .team-work{
         flex-direction: column;
         gap: 20px;
     }
@@ -331,9 +333,13 @@ h2{
         grid-template-columns: repeat(1, 1fr);
     }
     .banner-img{
-        width: 500px;
-        height: 252px;
+        width: 100%;
+        height: auto;
         margin-bottom: 20px;
+    }
+    .image-arch{
+        width: 100%;
+        height: auto;
     }
     .title{
         font-weight: 600;
@@ -343,8 +349,8 @@ h2{
         margin-bottom: 20px;
     }
     .project-img{
-        width: 500px;
-        height: 265px;
+        width: 100%;
+        height: auto;
     }
     .pro-title{
         font-weight: 600;
